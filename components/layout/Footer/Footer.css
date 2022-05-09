@@ -1,0 +1,3 @@
+.footer-link {
+  @apply px-4 py-2 text-xl font-normal tracking-wider underline lg:px-6 lg:py-3 hover:text-gray-800;
+}

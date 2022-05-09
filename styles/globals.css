@@ -1,16 +1,28 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link {
+  @apply px-4 py-2 font-semibold tracking-wider no-underline lg:px-6 lg:py-3 ;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+.input-css {
+  @apply w-full px-3 py-2 my-2 text-lg border-2 border-gray-300 border-solid rounded-md focus:outline-none focus:ring-1 focus:border-blue-300;
 }
 
-* {
-  box-sizing: border-box;
+.input-button-css {
+  @apply px-4 py-2 transition border-2 border-gray-200 border-solid rounded-md link hover:bg-gray-200 hover:text-gray-700;
+}
+
+.label-css {
+  @apply px-1 py-2 text-xl font-medium border-gray-300 rounded-md rounded-r-none select-none;
+}
+
+th {
+  @apply text-center md:px-8;
+}
+
+td{
+  @apply py-8 text-center;
 }
